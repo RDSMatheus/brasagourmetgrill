@@ -1,0 +1,22 @@
+{
+  "name": "brasa-gourmet-grill",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.69.7",
+    "sass-loader": "^13.3.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "normalize-scss": "^8.0.0",
+    "normalize.css": "^8.0.1",
+    "reset-css": "^5.0.2"
+  }
+}

@@ -1,0 +1,67 @@
+@import 'reset-css';
+@import "./mixins-and-variables.scss";
+@import "./header.scss";
+@import "./introduction.scss";
+@import "./menu.scss";
+@import "./steak-bg.scss";
+@import "./chefs.scss";
+@import "./gallery.scss";
+@import "./book-a-table.scss";
+@import "./footer.scss";
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body{
+  background-color: $cor-base-02;
+}
+
+$l-device: 1200px;
+$m-device: 760px;
+$s-device: 480px;
+
+@mixin device($size){
+  @if $size == l {
+    @media screen and (min-width: $l-device) {
+      @content;
+    }
+  } @else if $size == m {
+    @media screen and (min-width: $m-device) and (max-width: ($l-device - 1)) {
+      @content;  
+    }
+  } @else if $size == s {
+    @media screen and (max-width: ($m-device - 1)) {
+      @content;
+    }
+  }
+}
+
+@mixin container{
+  max-width: $l-device;
+  margin: 0 auto;
+  @include device(m){
+    max-width: $m-device;
+  }
+  @include device(s){
+    max-width: $s-device;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.container{
+  @include container
+}

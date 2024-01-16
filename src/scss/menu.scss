@@ -1,0 +1,30 @@
+.menu{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  .menu-nav{
+    background: $cor-base-01;
+    text-align: center;
+    padding: 20px;
+    margin-top: -40px;
+    box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.2);
+    height: max-content;
+    h2{
+      @include type-1(40);
+      margin-bottom: 30px;
+    }
+    button{
+      @include type-2(20);
+      background: none;
+      border: none;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+  }
+  .menu-itens{
+    div{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+  }
+}

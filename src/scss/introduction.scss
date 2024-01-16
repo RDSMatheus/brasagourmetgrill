@@ -1,0 +1,42 @@
+.introduction-bg{
+  background-color: $cor-base-12;
+  .introduction{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: $cor-base-01;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, max-content);
+    gap: 30px 100px ;
+    h2{
+      @include type-1(50);
+      font-weight: 700;
+    }
+    p{
+      margin-top: 30px;
+      @include type-2(18);
+    }
+    .img-1, .img-2, .img-3 {
+      border: 4px solid $amarelo-7;
+      position: relative;
+      z-index: 0;
+    
+      &::before {
+        content: "";
+        display: block;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent; /* Defina a cor de fundo como transparente */
+        position: absolute;
+        z-index: 1;
+        box-shadow: inset 0 0 0 10px $cor-base-12; /* Adicione a sombra aqui */
+      }
+    }
+    
+    
+  }
+}
