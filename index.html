@@ -11,28 +11,36 @@
 <body>
   <div class="header">
     <div class="container">
-
+      <nav id="nav-bar">
+        <img src="./src/assets/logo.svg" alt="logo">
+        <ul>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#book-a-table">Reservas</a></li>
+          <li><a href="#chefs">Nossos Chefs</a></li>
+        </ul>
+      </nav>
       <header>
         <img src="./src/assets/logo.svg" alt="logo">
         <nav>
           <ul>
-            <li><a href="">Endereço</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Reservas</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#book-a-table">Reservas</a></li>
+            <li><a href="#chefs">Nossos Chefs</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <h1>Os Melhores Grelhados
           e Drinks Excepcionais</h1>
-        <button>Faça sua reserva</button>
+        <a href="#book-a-table">Faça sua reserva</a>
       </main>
     </div>
 
   </div>
 
-  <section class="introduction-bg">
+  <section id="about" class="introduction-bg">
     <div class="container introduction">
 
       <div class="texto-1">
@@ -73,26 +81,50 @@
     </div>
   </section>
 
-  <section class="menu container">
+  <section id="menu" class="menu container">
     <div class="menu-nav">
       <h2>Menu</h2>
       <nav>
         <ul>
-          <li><button>Entradas</button></li>
-          <li><button>Prato Principal</button></li>
-          <li><button>Sobremesa</button></li>
-          <li><button>Bebidas e Drinks</button></li>
+          <li><button data-item="appetizer">Entradas</button></li>
+          <li><button data-item="main-course">Prato Principal</button></li>
+          <li><button data-item="desert">Sobremesa</button></li>
+          <li><button data-item="drinks">Bebidas e Drinks</button></li>
         </ul>
       </nav>
     </div>
     <div class="menu-itens">
-      <div class="entries">
+      <div class="appetizer ">
         <img src="./src/assets/coxinha.jpg" alt="Coxinha">
         <img src="./src/assets/espetinho_2.jpg" alt="Espetinho de carne">
         <img src="./src/assets/pao_de_alho.jpg" alt="Pão de alho">
+        <img src="./src/assets/frango-empanado.jpg" alt="Coxinha">
+        <img src="./src/assets/salada.jpg" alt="Espetinho de carne">
+        <img src="./src/assets/bolinho-de-camarao.jpg" alt="Pão de alho">
+      </div>
+      <div class="main-course">
+        <img src="./src/assets/espetinho_2.jpg" alt="Coxinha">
+        <img src="./src/assets/espetinho_2.jpg" alt="Espetinho de carne">
+        <img src="./src/assets/espetinho_2.jpg" alt="Pão de alho">
+        <img src="./src/assets/espetinho_2.jpg" alt="Coxinha">
+        <img src="./src/assets/espetinho_2.jpg" alt="Espetinho de carne">
+        <img src="./src/assets/espetinho_2.jpg" alt="Pão de alho">
+      </div>
+      <div class="desert">
+        <img src="./src/assets/salada.jpg" alt="Coxinha">
+        <img src="./src/assets/salada.jpg" alt="Espetinho de carne">
+        <img src="./src/assets/salada.jpg" alt="Pão de alho">
+        <img src="./src/assets/salada.jpg" alt="Coxinha">
+        <img src="./src/assets/salada.jpg" alt="Espetinho de carne">
+        <img src="./src/assets/salada.jpg" alt="Pão de alho">
+      </div>
+      <div class="drinks">
         <img src="./src/assets/coxinha.jpg" alt="Coxinha">
         <img src="./src/assets/espetinho_2.jpg" alt="Espetinho de carne">
         <img src="./src/assets/pao_de_alho.jpg" alt="Pão de alho">
+        <img src="./src/assets/frango-empanado.jpg" alt="Coxinha">
+        <img src="./src/assets/salada.jpg" alt="Espetinho de carne">
+        <img src="./src/assets/bolinho-de-camarao.jpg" alt="Pão de alho">
       </div>
     </div>
   </section>
@@ -102,7 +134,7 @@
       essenciais para nosso sabor excepcional.</h2>
   </section>
 
-  <section class="chefs-container container">
+  <section id="chefs" class="chefs-container container">
     <h2>Conheça nossos chefs</h2>
     <div>
       <div class="img">
@@ -132,7 +164,7 @@
         <h2>Follow @brasagourmetgrill</h2>
         <p>Segue a gente no Instagram para ficar
           por dentro de tudo!</p>
-        <a href="#"><img src="./src/assets/instagram-svg-dark.svg" alt="Icone instagram">Visitar Instagram</a>
+        <a href=""><img src="./src/assets/instagram-svg-dark.svg" alt="Icone instagram">Visitar Instagram</a>
       </div>
 
     </div>
@@ -142,7 +174,7 @@
     <img src="./src/assets/gallery-photo-6.jpg" alt="">
   </section>
 
-  <section class="book-a-table">
+  <section id="book-a-table" class="book-a-table">
     <div class="container">
       <h2>Reserve sua mesa</h2>
       <form>
