@@ -11,18 +11,19 @@
 <body>
   <div class="header">
     <div class="container">
-      <nav id="nav-bar">
+      <header id="nav-bar">
         <img src="./src/assets/logo.svg" alt="logo">
-        <ul>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#book-a-table">Reservas</a></li>
-          <li><a href="#chefs">Nossos Chefs</a></li>
-        </ul>
-      </nav>
-      <header>
-        <img src="./src/assets/logo.svg" alt="logo">
-        <nav>
+        <nav id="nav-mobile">
+          <button id="btn-mobile-close"><span class="hamburguer">fechar</span></button>
+          <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#book-a-table">Reservas</a></li>
+            <li><a href="#chefs">Nossos Chefs</a></li>
+          </ul>
+        </nav>
+        <nav class="nav">
+          <button id="btn-mobile-open"><span class="hamburguer">menu</span></button>
           <ul>
             <li><a href="#about">Sobre</a></li>
             <li><a href="#menu">Menu</a></li>
@@ -31,6 +32,7 @@
           </ul>
         </nav>
       </header>
+
       <main>
         <h1>Os Melhores Grelhados
           e Drinks Excepcionais</h1>
@@ -81,7 +83,7 @@
     </div>
   </section>
 
-  <section id="menu" class="menu container">
+  <section id="menu" class="menu">
     <div class="menu-nav">
       <h2>Menu</h2>
       <nav>
@@ -95,36 +97,36 @@
     </div>
     <div class="menu-itens">
       <div class="appetizer ">
-        <img src="./src/assets/coxinha.jpg" alt="Coxinha">
-        <img src="./src/assets/espetinho_2.jpg" alt="Espetinho de carne">
-        <img src="./src/assets/pao_de_alho.jpg" alt="Pão de alho">
-        <img src="./src/assets/frango-empanado.jpg" alt="Coxinha">
-        <img src="./src/assets/salada.jpg" alt="Espetinho de carne">
-        <img src="./src/assets/bolinho-de-camarao.jpg" alt="Pão de alho">
+        <picture><img src="./src/assets/coxinha.jpg" alt="Coxinha"></picture>
+        <picture><img src="./src/assets/espetinho.jpg" alt="Espetinho de carne"></picture>
+        <picture><img src="./src/assets/pao-de-alho.jpg" alt="Pão de alho"></picture>
+        <picture><img src="./src/assets/frango.jpg" alt="Coxinha"></picture>
+        <picture><img src="./src/assets/salada.jpg" alt="Espetinho de carne"></picture>
+        <picture><img src="./src/assets/bolinho-de-camaro.jpg" alt="Pão de alho"></picture>
       </div>
       <div class="main-course">
-        <img src="./src/assets/espetinho_2.jpg" alt="Coxinha">
-        <img src="./src/assets/espetinho_2.jpg" alt="Espetinho de carne">
-        <img src="./src/assets/espetinho_2.jpg" alt="Pão de alho">
-        <img src="./src/assets/espetinho_2.jpg" alt="Coxinha">
-        <img src="./src/assets/espetinho_2.jpg" alt="Espetinho de carne">
-        <img src="./src/assets/espetinho_2.jpg" alt="Pão de alho">
+        <picture><img src="./src/assets/bife-ancho.jpg" alt="Coxinha"></picture>
+        <picture><img src="./src/assets/contra-file.jpg" alt="Espetinho de carne"></picture>
+        <picture><img src="./src/assets/picanha.png" alt="Pão de alho"></picture>
+        <picture><img src="./src/assets/costela.jpg" alt="Coxinha"></picture>
+        <picture><img src="./src/assets/file-mignon.jpg" alt="Espetinho de carne"></picture>
+        <picture><img src="./src/assets/salmao.jpg" alt="Pão de alho"></picture>
       </div>
       <div class="desert">
-        <img src="./src/assets/salada.jpg" alt="Coxinha">
-        <img src="./src/assets/salada.jpg" alt="Espetinho de carne">
-        <img src="./src/assets/salada.jpg" alt="Pão de alho">
-        <img src="./src/assets/salada.jpg" alt="Coxinha">
-        <img src="./src/assets/salada.jpg" alt="Espetinho de carne">
-        <img src="./src/assets/salada.jpg" alt="Pão de alho">
+        <picture><img src="./src/assets/brownie.jpg" alt="Coxinha"></picture>
+        <picture><img src="./src/assets/torta-de-blueberry.jpg" alt="Espetinho de carne"></picture>
+        <picture><img src="./src/assets/torta-de-morango.jpg" alt="Pão de alho"></picture>
+        <picture><img src="./src/assets/cupcake.jpg" alt="Coxinha"></picture>
+        <picture><img src="./src/assets/waffle.jpg" alt="Espetinho de carne"></picture>
+        <picture><img src="./src/assets/sundae.jpg" alt="Pão de alho"></picture>
       </div>
       <div class="drinks">
-        <img src="./src/assets/coxinha.jpg" alt="Coxinha">
-        <img src="./src/assets/espetinho_2.jpg" alt="Espetinho de carne">
-        <img src="./src/assets/pao_de_alho.jpg" alt="Pão de alho">
-        <img src="./src/assets/frango-empanado.jpg" alt="Coxinha">
-        <img src="./src/assets/salada.jpg" alt="Espetinho de carne">
-        <img src="./src/assets/bolinho-de-camarao.jpg" alt="Pão de alho">
+        <picture><img src="./src/assets/caipirinha.jpg" alt="Coxinha"></picture>
+        <picture><img src="./src/assets/dry-martini.jpg" alt="Espetinho de carne"></picture>
+        <picture><img src="./src/assets/chopp.jpg" alt="Pão de alho"></picture>
+        <picture><img src="./src/assets/suco-natual.jpg" alt="Coxinha"></picture>
+        <picture><img src="./src/assets/negroni.jpg" alt="Espetinho de carne"></picture>
+        <picture><img src="./src/assets/pina-colada.jpg" alt="Pão de alho"></picture>
       </div>
     </div>
   </section>
@@ -161,7 +163,7 @@
     <img src="./src/assets/gallery-photo-1.jpg" alt="">
     <div class="banner">
       <div>
-        <h2>Follow @brasagourmetgrill</h2>
+        <h2><img src="./src/assets/instagram-svg.svg" alt="">Follow @brasagourmetgrill</h2>
         <p>Segue a gente no Instagram para ficar
           por dentro de tudo!</p>
         <a href=""><img src="./src/assets/instagram-svg-dark.svg" alt="Icone instagram">Visitar Instagram</a>

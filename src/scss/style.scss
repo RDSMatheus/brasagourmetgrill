@@ -8,6 +8,8 @@
 @import "./gallery.scss";
 @import "./book-a-table.scss";
 @import "./footer.scss";
+@import "./footer.scss";
+@import "./nav-mobile.scss";
 
 *{
   margin: 0;
@@ -29,38 +31,7 @@ body{
   background-color: $cor-base-02;
 }
 
-$l-device: 1200px;
-$m-device: 760px;
-$s-device: 480px;
 
-@mixin device($size){
-  @if $size == l {
-    @media screen and (min-width: $l-device) {
-      @content;
-    }
-  } @else if $size == m {
-    @media screen and (min-width: $m-device) and (max-width: ($l-device - 1)) {
-      @content;  
-    }
-  } @else if $size == s {
-    @media screen and (max-width: ($m-device - 1)) {
-      @content;
-    }
-  }
-}
-
-@mixin container{
-  max-width: $l-device;
-  margin: 0 auto;
-  @include device(m){
-    max-width: $m-device;
-  }
-  @include device(s){
-    max-width: $s-device;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
 
 .container{
   @include container

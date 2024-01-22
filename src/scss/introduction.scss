@@ -10,6 +10,17 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, max-content);
     gap: 30px 100px ;
+    @include device(m){
+      gap: 30px;
+    }
+    @include device(s){
+      grid-template-columns: 1fr
+    }
+    .texto-2{
+      @include device(s){
+        grid-row: 3;
+      }
+    }
     h2{
       @include type-1(50);
       font-weight: 700;
@@ -22,7 +33,9 @@
       border: 4px solid $amarelo-7;
       position: relative;
       z-index: 0;
-    
+      @include device(s){
+        padding-bottom: 30px;
+      }
       &::before {
         content: "";
         display: block;

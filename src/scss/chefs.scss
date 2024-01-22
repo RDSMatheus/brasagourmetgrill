@@ -1,9 +1,12 @@
 .chefs-container{
   scroll-margin-top: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 40px 100px;
   padding: 100px 0;
+  @include device(l){
+    grid-template-columns: 1fr 1fr;
+  }
   h2{
     grid-column: 1/-1;
     @include type-1(60);

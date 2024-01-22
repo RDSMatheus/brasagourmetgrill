@@ -2,13 +2,25 @@
   scroll-margin-top: 180px;
   display: grid;
   grid-template-columns: 1fr 4fr;
+  max-width: $l-device;
+  margin: 0 auto;
+  @include device(m){
+    max-width: $m-device;
+  }
+  @include device(s){
+    width: calc(100% - 40px);
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   .menu-nav{
     background: $cor-base-01;
     text-align: center;
-    padding: 20px;
+    padding: 20px 60px;
     margin-top: -40px;
     box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.2);
     height: max-content;
+    
     h2{
       @include type-1(40);
       margin-bottom: 30px;
@@ -17,9 +29,43 @@
       @include type-2(20);
       background: none;
       border: none;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       cursor: pointer;
+      &::after{
+        content: "";
+        width: max-content;
+        display: block;
+        height: 2px;
+        background-color: transparent;
+        transition: .3s;
+        transform: translateX(-99%);
+        opacity: 0;
+        margin-top: 5px;
+      }
+      &:hover::after{
+        content: "";
+        width: 100%;
+        display: block;
+        height: 2px;
+        opacity: 1;
+        margin-top: 5px;
+        background: linear-gradient($amarelo-5, $amarelo-7);
+        transform: translateX(0);
+      }
     }
+    button.ativo{
+      &::after{
+        content: "";
+        width: 100%;
+        display: block;
+        height: 2px;
+        margin-top: 5px;
+        opacity: 1;
+        background: linear-gradient($amarelo-5, $amarelo-7);
+        transform: translateX(0);
+      }
+    }
+    
   }
   .menu-itens{
    position: relative;
@@ -34,6 +80,14 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 2px;
       opacity: 0;
+      @include device(m){
+      grid-template-columns: 1fr 1fr;
+      };
+      @include device(s){
+        grid-template-columns: 1fr;
+        gap: 10px;
+        };
+      
     }
     div.ativo{
       visibility: visible;

@@ -8,6 +8,7 @@
     justify-content: center;
     gap: 20px;
     margin-bottom: 30px;
+    
     &::before{
       content: "";
       width: 400px;
@@ -29,6 +30,10 @@
     display: flex;
     justify-content: space-between;
     color: $cor-base-02;
+    @include device(s){
+      flex-direction: column;
+      gap: 40px;
+    }
     h3{
       @include type-1(30);
       margin-bottom: 20px;
@@ -40,6 +45,7 @@
       margin-bottom: 5px;
       gap: 8px;
       align-items: center;
+      justify-content: center;
       img{
         width: 24px;
         height: 24px;
