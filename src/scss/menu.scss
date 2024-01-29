@@ -70,7 +70,7 @@
   .menu-itens{
    position: relative;
    display: grid;
-    div{
+   .appetizer,.main-course,.desert,.drinks{
       grid-area: 1/1;
       display: grid;
       transform: translateX(-100%);
@@ -87,7 +87,57 @@
         grid-template-columns: 1fr;
         gap: 10px;
         };
-      
+      .item{
+        position: relative;
+        z-index: 1;
+        transition: .2s;
+        p{
+          display: flex;
+          flex-direction: column;
+          visibility: hidden;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transform: translateY(-150%);
+          z-index: 4;
+          top: 0;
+          left: 0;
+          color: white;
+          align-items: center;
+          justify-content: center;
+          @include type-2(20);
+          transition: .6s;
+          span{
+            color: $amarelo-7;
+          }
+        }
+        &::after{
+          content: "";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: transparent;
+          display: block;
+          position: absolute;
+          z-index: 3;
+        }
+        &:hover::after{
+          content: "";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: rgba($color: #000000, $alpha: .7);
+          display: block;
+          position: absolute;
+          z-index: 3;
+        }
+        &:hover p{
+          visibility: visible;
+          transform: translateY(0);
+        }
+      }
     }
     div.ativo{
       visibility: visible;
