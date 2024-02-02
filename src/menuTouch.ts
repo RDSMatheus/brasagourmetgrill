@@ -6,11 +6,10 @@ export default function menuTouch(container: Element | null) {
         item.classList.remove('ativo');
       }
     });
-    if (event && event.target instanceof HTMLButtonElement) {
-      event.target.classList.add('ativo');
+    if (event && event.target instanceof HTMLElement) {
+      const targetElement = event.target as HTMLElement;
       setTimeout(() => {
-        if (event && event.target instanceof HTMLButtonElement)
-          event.target.classList.remove('ativo');
+        targetElement.classList.remove('ativo');
       }, 4000);
     }
   }
