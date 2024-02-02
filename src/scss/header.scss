@@ -39,7 +39,29 @@
       gap: 20px;
       a{
         color: $cor-base-01;  
+        padding: .5rem 1rem;
+        position: relative;
+        &::after{
+          content: "";
+          position: absolute;
+          display: block;
+          width: 0;
+          height: 2px;
+          visibility: hidden;
+          background-color: $amarelo-7;
+          transition: .3s;
+          transform: translateX(-100px);
+          opacity: 0;
+        }
+        &:hover::after{
+          width: calc(100% - 2rem);
+          visibility: visible;
+          opacity: 1;
+          left: 1rem;
+          transform: translateX(0);
+        }
       }
+  
     }
   }
   .btn-mobile{

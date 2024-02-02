@@ -94,11 +94,15 @@
         text-transform: uppercase;
         padding: 1rem 2rem;
         margin-left: 50px;
+        &:hover{
+          background: darken($color: $amarelo-7, $amount: 1);
+        }
         img{
           width: 24px;
           height: 24px;
           filter: brightness(100%);
         }
+      
       }
     }
   }

@@ -12,6 +12,7 @@
   transform: translateY(-100%);
   visibility: hidden;
   overflow: hidden;
+  padding: 20px;
   li{
     margin: 0 60px;
     a{
@@ -35,9 +36,76 @@
   ul{
     display: block;
   }
+  #btn-mobile-close{
+    padding: 20px 10px;
+    border: none;
+    background: $cor-base-01;
+    visibility: visible;
+    margin-bottom: 30px;
+    span{
+  
+      width: 30px;
+      height: 4px;
+      display: block;
+      background-color: $amarelo-7;
+      border: none;
+      transform: rotate(45deg);
+      &::before{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 4px;
+        margin-bottom: 10px;
+        display: block;
+        background-color: inherit;
+        border: none;
+        transform: rotate(90deg);
+        }
+    }
+  }
 }
 .nav #btn-mobile-open{
   @include device(l){
     display: none;
   }
 }
+
+#btn-mobile-open{
+  padding: 20px;
+  border: none;
+  background: transparent;
+  span{
+
+    width: 30px;
+    height: 4px;
+    display: block;
+    background-color: $amarelo-7;
+    border: none;
+    position: relative;
+    
+    &::before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 10px;
+    display: block;
+    background-color: $cor-base-01;
+    border: none;
+    position: absolute;
+    top: -10px;
+    }
+    &::after{
+      content: "";
+      display: block;
+      width: 30px;
+    height: 4px;
+    display: block;
+    background-color: $cor-base-01;
+    border: none;
+    position: absolute;
+    top: 10px;
+    }
+  }
+}
+

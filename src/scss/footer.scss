@@ -30,6 +30,7 @@
     display: flex;
     justify-content: space-between;
     color: $cor-base-02;
+    max-width: 1000px;
     @include device(s){
       flex-direction: column;
       gap: 40px;

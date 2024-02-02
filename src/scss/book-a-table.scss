@@ -30,6 +30,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px 40px;
+      @include device(s){
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
       @include type-2(20);
       label{
         display: block;
