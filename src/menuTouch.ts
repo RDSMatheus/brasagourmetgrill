@@ -8,11 +8,12 @@ export default function menuTouch(container: Element | null) {
     });
     const targetElement = event.target as HTMLElement;
     targetElement.classList.add('ativo');
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       targetElement.classList.remove('ativo');
     }, 4000);
+    clearTimeout(timeout);
   }
-  
+
   if (container) {
     const items = container.querySelectorAll('div');
     items?.forEach((item) =>
