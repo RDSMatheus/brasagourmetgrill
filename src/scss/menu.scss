@@ -139,6 +139,10 @@
         &:hover p{
           visibility: visible;
           transform: translateY(0);
+          @include device(s){
+            visibility: hidden;
+          transform: none;
+          }
         }
       }
       .item.ativo{
