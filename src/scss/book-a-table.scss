@@ -3,6 +3,9 @@
   position: relative;
   padding: 60px;
   z-index: 0;
+  @include device(s){
+    padding: 10px;
+  }
   &::before {
     content: "";
     position: absolute;

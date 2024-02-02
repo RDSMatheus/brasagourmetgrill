@@ -37,5 +37,8 @@
     margin: 0 auto;
     color: $cor-base-02;
     padding: 200px 20px;
+    @include device(s){
+      @include type-1(30);
+    }
   }
 }

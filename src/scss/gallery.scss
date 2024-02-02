@@ -40,6 +40,9 @@
     width: 100%;
     height: 300px;
     filter: brightness(50%);
+    @include device(s){
+      max-width: 100%;
+    }
   }
   .banner{
     background: url(../assets/gallery-bg.jpg);
@@ -51,6 +54,10 @@
     justify-content: center;
     padding: 0 20px;
     height: 300px;
+    @include device(s){
+      max-width: 100%;
+      padding: 0 10px;
+    }
     &::after{
       content: "";
       position: absolute;
@@ -70,17 +77,26 @@
         gap: 10px;
         display: flex;
         align-items: center;
+        @include device(s){
+          @include type-1(30);
+        }
         img{
           width: 40px;
           height: 40px;
           position: relative;
           filter: brightness(100%);
+          @include device(s){
+            display: none
+          }
         }
       }
       p{
         @include type-2(18);
         padding-bottom: 20px;
         margin-left: 50px;
+        @include device(s){
+          margin-left: 0;
+        }
       }
       a{
         display: flex;
@@ -94,6 +110,10 @@
         text-transform: uppercase;
         padding: 1rem 2rem;
         margin-left: 50px;
+        @include device(s){
+          @include type-2(18);
+          margin-left: 0;
+        }
         &:hover{
           background: darken($color: $amarelo-7, $amount: 1);
         }

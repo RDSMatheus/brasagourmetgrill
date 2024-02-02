@@ -1,3 +1,5 @@
+import menuTouch from "./menuTouch";
+
 export default function menu(buttons: NodeList | null, container: string) {
   const item0 = buttons ? (buttons[0] as HTMLButtonElement | null) : null;
   const allMenuItems = document.querySelectorAll(`${container} div`);
@@ -6,6 +8,7 @@ export default function menu(buttons: NodeList | null, container: string) {
     allMenuItems.forEach((item) => item.classList.remove('ativo'));
     const menuItem = document.querySelector(`.${item}`);
     menuItem?.classList.add('ativo');
+    menuTouch(menuItem);
   }
 
   if (item0) {
