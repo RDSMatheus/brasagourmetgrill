@@ -17,7 +17,7 @@ export default function menuTouch(container: Element | null) {
   if (container) {
     const items = container.querySelectorAll('div');
     items?.forEach((item) =>
-      item.addEventListener('touchstart', (event) => {
+      item.addEventListener('touchend', (event) => {
         handleTouch(event, items);
       }),
     );
