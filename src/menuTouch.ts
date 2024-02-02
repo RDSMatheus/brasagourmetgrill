@@ -9,7 +9,7 @@ export default function menuTouch(container: Element | null) {
     if (event && event.target instanceof HTMLButtonElement) {
       event.target.classList.add('ativo');
       setTimeout(() => {
-        if (event.target instanceof HTMLButtonElement)
+        if (event && event.target instanceof HTMLButtonElement)
           event.target.classList.remove('ativo');
       }, 4000);
     }
