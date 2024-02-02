@@ -27,6 +27,7 @@
     }
     button{
       @include type-2(20);
+      color: $cor-base-12;
       background: none;
       border: none;
       margin-bottom: 15px;
@@ -125,6 +126,7 @@
           position: absolute;
           z-index: 3;
         }
+        @media (min-width: 768px) {
         &:hover::after{
           content: "";
           width: 100%;
@@ -139,12 +141,8 @@
         &:hover p{
           visibility: visible;
           transform: translateY(0);
-          @include device(s){
-            visibility: hidden;
-          transform: none;
-          }
         }
-      }
+      }}
       .item.ativo{
         position: relative;
         z-index: 1;
