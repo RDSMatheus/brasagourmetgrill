@@ -6,13 +6,13 @@ export default function menuTouch(container: Element | null) {
         item.classList.remove('ativo');
       }
     });
-    if (event && event.target instanceof HTMLElement) {
-      const targetElement = event.target as HTMLElement;
-      setTimeout(() => {
-        targetElement.classList.remove('ativo');
-      }, 4000);
-    }
+    const targetElement = event.target as HTMLElement;
+    targetElement.classList.add('ativo');
+    setTimeout(() => {
+      targetElement.classList.remove('ativo');
+    }, 4000);
   }
+  
   if (container) {
     const items = container.querySelectorAll('div');
     items?.forEach((item) =>
