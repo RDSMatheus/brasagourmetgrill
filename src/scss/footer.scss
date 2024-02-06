@@ -51,6 +51,12 @@
         width: 24px;
         height: 24px;
       }
+      a{
+        display: flex;
+        gap: 8px;
+        padding: .5rem 1rem;
+        color: $cor-base-01;
+      }
     }
   }
 }

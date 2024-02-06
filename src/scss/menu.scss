@@ -17,10 +17,11 @@
     background: $cor-base-01;
     text-align: center;
     padding: 20px 60px;
-    margin-top: -40px;
+    margin-top: -50px;
     box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.2);
     height: max-content;
-    
+    position: relative;
+    z-index: 1;
     h2{
       @include type-1(40);
       margin-bottom: 30px;
@@ -99,7 +100,8 @@
           position: absolute;
           width: 100%;
           height: 100%;
-          transform: translateY(-150%);
+          opacity: 0;
+          transform: translateY(-10%);
           z-index: 4;
           top: 0;
           left: 0;
@@ -116,6 +118,7 @@
           }
         }
         &::after{
+          display: none;
           content: "";
           width: 100%;
           height: 100%;
@@ -129,6 +132,7 @@
         @media (min-width: 768px) {
         &:hover::after{
           content: "";
+          display: block;
           width: 100%;
           height: 100%;
           top: 0;
@@ -139,6 +143,7 @@
           z-index: 3;
         }
         &:hover p{
+          opacity: 1;
           visibility: visible;
           transform: translateY(0);
         }
@@ -151,7 +156,7 @@
           display: flex;
           flex-direction: column;
           visibility: visible;
-          transform: translateY(0);
+          transform: translateX(0);
           @include device(s){
             transform: translateX(0);
           }

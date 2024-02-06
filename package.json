@@ -12,7 +12,8 @@
     "sass": "^1.69.7",
     "sass-loader": "^13.3.3",
     "typescript": "^5.2.2",
-    "vite": "^5.0.8"
+    "vite": "^5.0.8",
+    "vite-plugin-vsharp": "^1.7.3"
   },
   "dependencies": {
     "normalize-scss": "^8.0.0",

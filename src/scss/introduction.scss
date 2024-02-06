@@ -24,6 +24,9 @@
     h2{
       @include type-1(50);
       font-weight: 700;
+      @include device(s){
+        @include type-1(35);
+      }
     }
     p{
       margin-top: 30px;
