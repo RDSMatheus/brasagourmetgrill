@@ -37,7 +37,7 @@
       position: relative;
       z-index: 0;
       @include device(s){
-        padding-bottom: 30px;
+        margin-bottom: 30px;
       }
       &::before {
         content: "";
@@ -47,10 +47,10 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background-color: transparent; /* Defina a cor de fundo como transparente */
+        background-color: transparent;
         position: absolute;
         z-index: 1;
-        box-shadow: inset 0 0 0 10px $cor-base-12; /* Adicione a sombra aqui */
+        box-shadow: inset 0 0 0 10px $cor-base-12;
       }
     }
     
