@@ -9,16 +9,21 @@
     grid-template-columns: 1fr;
   }
   &::after{
-    content: "";
-    background: url(../assets/topwhitedivider.svg);
-    display: block;
-    width: 100%;
-    height: 38px;
-    position: absolute;
-    left: 0;  
-    right: 0;
-    overflow: hidden;
-    z-index: 1;
+      content: "";
+      background: url(../assets/paper-bg.jpg);
+      filter: brightness(100%);
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: 30px;
+      position: absolute;
+      left: 0;  
+      top: 0;
+      overflow: hidden;
+      z-index: 1;
+      -webkit-mask: url(../assets/topwhitedivider.svg);
+      mask: url(../assets/topwhitedivider.svg);
+
   }
   &::before{
     content: "";

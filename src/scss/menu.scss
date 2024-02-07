@@ -158,6 +158,11 @@
           flex-direction: column;
           visibility: visible;
           transform: translateX(0);
+          text-shadow: 0px 0px 10px rgba(0, 0, 0, .3),
+          0px 0px 20px rgba(0, 0, 0, .3),
+          0px 0px 30px rgba(0, 0, 0, .3),
+          0px 0px 40px rgba(0, 0, 0, .3),
+          0px 0px 50px rgba(0, 0, 0, .3);
           @include device(s){
             transform: translateX(0);
           }
