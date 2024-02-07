@@ -4,6 +4,7 @@
   grid-template-columns: 1fr 4fr;
   max-width: $l-device;
   margin: 0 auto;
+  padding-bottom: 40px;
   @include device(m){
     max-width: $m-device;
   }

@@ -17,7 +17,7 @@
     height: 100%;
     background: url(../assets/reserva-bg.jpg);
     background-size: contain;
-    filter: brightness(30%); /* Adjust the brightness value as needed */
+    filter: brightness(30%); 
     z-index: -1;
   }
   div{
@@ -45,6 +45,7 @@
       }
       input{
         display: block;
+        color: $cor-base-01;
         width: 100%;
         @include type-2(18);
         background: none;
@@ -54,17 +55,9 @@
         border-bottom: 2px solid $cor-base-01;
         padding: .4rem;
         &:focus{
-          background: $cor-base-01;
-          border: 2px solid $amarelo-5;
           outline: none;
-          box-shadow: 0 0 4px $amarelo-7;
         }
-        &:hover{
-          background: $cor-base-01;
-          border: 2px solid $amarelo-5;
-          outline: none;
-          box-shadow: 0 0 4px $amarelo-7;
-        }
+        
       }
       button{
         grid-column: 1/-1;

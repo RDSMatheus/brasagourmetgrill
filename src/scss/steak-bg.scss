@@ -37,6 +37,11 @@
     margin: 0 auto;
     color: $cor-base-02;
     padding: 200px 20px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6),
+    0px 0px 20px rgba(0, 0, 0, 0.6),
+    0px 0px 30px rgba(0, 0, 0, 0.6),
+    0px 0px 40px rgba(0, 0, 0, 0.6),
+    0px 0px 50px rgba(0, 0, 0, 0.6);
     @include device(s){
       @include type-1(30);
     }

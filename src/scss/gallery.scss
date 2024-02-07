@@ -26,7 +26,7 @@
     filter: brightness(30%);
     display: block;
     width: 100%;
-    height: 38px;
+    height: 50px;
     position: absolute;
     left: 0;  
     bottom: 0;
@@ -93,7 +93,6 @@
       p{
         @include type-2(18);
         padding-bottom: 20px;
-        margin-left: 50px;
         @include device(s){
           margin-left: 0;
         }
@@ -109,7 +108,6 @@
         font-weight: medium;
         text-transform: uppercase;
         padding: 1rem 2rem;
-        margin-left: 50px;
         @include device(s){
           @include type-2(18);
           margin-left: 0;
