@@ -11,6 +11,7 @@
   &::after{
       content: "";
       background: url(../assets/paper-bg.jpg);
+      background-size: 750px;
       filter: brightness(100%);
       opacity: 1;
       display: block;

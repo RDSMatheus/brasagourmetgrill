@@ -1,11 +1,13 @@
 .chefs-bg{
   scroll-margin-top: 40px;
   position: relative;
+  @include device(s){
+    padding: 0 20px;
+  }
   &::after{
     content: "";
     background-image: url(../assets/paper-bg.jpg);
     background-size: 750px;
-    opacity: .7;
     top: 0;
     left: 0;
     width: 100%;
@@ -27,11 +29,17 @@
       grid-column: 1/-1;
       @include type-1(60);
       text-align: center;
+      @include device(s){
+        @include type-1(40);
+      }
     }
     h3{
       @include type-1(40);
       text-align: center;
       margin-bottom: 20px;
+      @include device(s){
+        @include type-1(30);
+      }
     }
     p{
       @include type-2(18);
